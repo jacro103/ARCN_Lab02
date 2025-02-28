@@ -107,50 +107,7 @@ mvn exec:java -Dexec.mainClass="com.example.TDD.Main"
 - 🔹 Ejecutar `mvn test` después de cada cambio.
 - 🔹 Mantener el código limpio y reutilizable.
 
-## ⚙️ Integración con CI/CD
-Para automatizar pruebas en GitHub, crea `.github/workflows/maven.yml`:
 
-```yaml
-name: Java CI
 
-on: [push, pull_request]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
-      - run: mvn test
-```
-
-## 📏 Métricas de Calidad del Código
-- 📌 Cobertura de código: Usa JaCoCo para medir la cobertura de pruebas.
-- 📌 Análisis estático: Integrar SonarCloud o Checkstyle.
-
-## 🛡️ Seguridad y Mantenimiento
-- 📌 Mantener dependencias actualizadas.
-- 📌 Implementar análisis de vulnerabilidades con Snyk.
-
-## 📚 Documentación de la API
-Si agregamos una API REST con Spring Boot, podemos exponer un endpoint:
-
-```bash
-GET /fizzbuzz/{number}
-```
-
-Respuesta esperada:
-
-```json
-{
-  "input": 15,
-  "output": "FizzBuzz"
-}
-```
-
-## 📜 Licencia
-Este proyecto se distribuye bajo la licencia MIT. 🚀
+## 📜 Autor
+Jose Alejandro Correa Rodriguez. 🚀
